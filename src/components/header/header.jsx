@@ -14,8 +14,10 @@ const Header = () => {
     const changehandler = (e) => setText(e.target.value);
         
     const addHandler = () => {
-        dispatch(addToDO(text));
-        setText('')
+        if(text.length && text.trim()) {
+            dispatch(addToDO(text));
+            setText('')
+        }
     }
 
     const handleKeyDown = (e) => {

@@ -11,7 +11,7 @@ const TodoItem = ({todo}) => {
     return(
         <div className="todoitem-container">
             <span>{id}</span>
-            <span>{text}</span>
+            <span className="text">{text}</span>
             <button onClick={()=>dispatch(deleteToDO(id))}>Done</button>
         </div>
     );
