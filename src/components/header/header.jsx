@@ -22,11 +22,8 @@ const Header = () => {
 
     const handleKeyDown = (e) => {
         const trimmedText = e.target.value.trim()
-        // If the user pressed the Enter key:
         if (e.key === 'Enter' && trimmedText) {
-          // Dispatch the "todo added" action with this text
           dispatch(addToDO(text));
-          // And clear out the text input
           setText('')
         }
     }

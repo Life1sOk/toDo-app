@@ -8,4 +8,11 @@
         width: 60%;
         word-wrap: break-word;
     }
+
+    .done {
+        text-decoration: line-through;
+        border: 1px solid red;
+        width: 60%;
+        word-wrap: break-word;
+    }
 }
